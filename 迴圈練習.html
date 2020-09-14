@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const myfunc = (n, m) => {
+        let sum = 0;
+        let i = 0;
+
+        while (sum <= m) {
+          sum += n++; // sum+=n+i (老師解)
+          i++;
+        }
+        return i;
+      };
+
+      console.log(myfunc(1, 5));
+      console.log(myfunc(5, 10));
+      console.log(myfunc(100, 1000));
+    </script>
+  </body>
+</html>
