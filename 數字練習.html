@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document123</title>
+  </head>
+  <body>
+    <script>
+      // 從 0 到 100 隨機取整數
+      const rand100 = () => {
+        // let i = Math.random();
+        // i *= 100;
+        // i = Math.round(i);
+        // return i;
+
+        return Math.round(Math.random() * 100);
+      };
+      console.log(rand100());
+
+      // 最小整數和最大整數，回傳一個區間內的隨機整數
+      const rand = (min, max) => {
+        return Math.round(Math.random() * (max - min)) + min;
+      };
+
+      console.log(rand(5, 10));
+      console.log(rand(10, 20));
+      console.log(rand(10, 200));
+    </script>
+  </body>
+</html>
